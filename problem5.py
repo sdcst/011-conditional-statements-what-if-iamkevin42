@@ -27,5 +27,22 @@ Enter a: 1
 Enter b: 4
 Enter c: 8
 the equation can not be factored
+""" 
+import math
 
-"""
+a = float(input("Enter a number\n"))
+b = float(input("Enter another number\n"))
+c = float(input("Enter the final number\n"))
+
+discriminant = b**2 - 4 * a * c  
+ 
+sqrt_num = math.sqrt(discriminant)  
+if sqrt_num.is_integer():  
+    print("the equation can be factored")  
+else:  
+    print("the equation can not be factored")
+
+
+
+
+

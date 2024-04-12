@@ -12,3 +12,15 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+
+
+import math
+
+a = int(input("Enter any number to test whether it is odd or even\n"))
+
+if a % 2 == 0:
+    print("This number is even")
+
+else:
+    print("This number is odd")
+

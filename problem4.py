@@ -30,6 +30,15 @@ Enter one side: 5
 Enter a second side: 15
 Enter third side: 12
 that is an obtuse triangle
-
-
 """
+
+a=float(input("Enter length of first side: "))
+b=float(input("Enter length of second side: "))
+c=float(input("Enter length of third side: "))
+
+if a==b+c or b==a+c or c==a+b:
+    print("This is a right angle triangle")
+elif a>c+b or b>a+c or c>a+b:
+    print("This is a obtuse triangle")
+else:
+    print("This is an acute triangle")
